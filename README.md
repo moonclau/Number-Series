@@ -21,3 +21,11 @@
 <li>Node v20.11.0</li>
 <li>npm 10.2.4</li>
 </ul>
+<p>Instrucciones</p>
+<ul>
+  <li>Bajar el Repositorio</li>
+  <li>Ejecutar el comando npm install</li>
+  <li>Si se desea ver la app en el navegador, ejecutar npm run dev</li>
+  <li>Si se desea realizar pruebas, ejecutar npm run test</li>
+</ul>
+<h3>y eso es todo ✨</h3>
