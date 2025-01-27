@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+:root {
+  margin: none;
+
+  background-color: oklch(0.809 0.105 251.813) ;
+
+}
