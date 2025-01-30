@@ -1,8 +1,31 @@
-# React + Vite
+<h1><b>Prueba tecnica Series Numericas </b></h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h2>Hola, Espero que te encuentres de lo mejor.<br> Aqui pondre una descripción de la prueba tecnica junto con instrucciones para hacerlo funcionar.</h2>
 
-Currently, two official plugins are available:
+<h3>Descripcion de la prueba:</h3>
+<p> Desarrollar una clase con un método que entregue el término n de la serie</p>
+<p> $serie(n) = -3primo(n) - fibonacci(n)+ 5triangular(n+1)$</p>
+<p>Realizar pruebas unitarias al método de la serie numérica usando los 10 números naturales como entrada (10 casos de prueba en total).
+</p>
+<p>Desarrollar 3 componentes:</p>
+<pre>
+  1.- un componente visual que muestra un formulario para introducir el número n
+  2.- un componente no-visual donde se calcule el término n de la serie
+  3.- un componente visual que muestra el resultado del cálculo
+</pre>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h3>Instalación:</h3>
+<p>Versión de tecnologias usadas:</p>
+<ul>
+<li> React Js 19</li>
+<li>Node v20.11.0</li>
+<li>npm 10.2.4</li>
+</ul>
+<p>Instrucciones</p>
+<ul>
+  <li>Bajar el Repositorio</li>
+  <li>Ejecutar el comando npm install</li>
+  <li>Si se desea ver la app en el navegador, ejecutar npm run dev</li>
+  <li>Si se desea realizar pruebas, ejecutar npm run test</li>
+</ul>
+<h3>y eso es todo ✨</h3>
