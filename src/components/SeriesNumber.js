@@ -1,5 +1,5 @@
-/*Una clase con un metodo que entregue el termino n de la serie.
-*
+/*
+* A class with a method that returns the nth term of the series.
 */ 
 class SeriesNumber {
     static operation(number) {
@@ -9,30 +9,31 @@ class SeriesNumber {
         if(number <= 0){
             return serieTotalResult;
         }
-        //Numero primo
+        //Prime number
         let count =2, numberPrimeResult=2, numPrimeResult =0;
-        let numbersPrime= {1:2};
+        let numbersPrime= [2];
         while (count <= number){
-                    while( Object.values(numbersPrime).some((element) => numberPrimeResult % element === 0)  ){
+                    while( numbersPrime.some((element) => numberPrimeResult % element === 0)  ){
                         numberPrimeResult++;
                     }
-                numbersPrime[count] = numberPrimeResult;
+                numbersPrime.push(numberPrimeResult);
                 count++;
                 numberPrimeResult++;
             }
-        numPrimeResult = -3 *  numbersPrime[count-1];
-        console.log('primo',numbersPrime[count-1]);
+        numPrimeResult = -3 *  numbersPrime[numbersPrime.length - 1];
         //fibonacci
         let fibonacciAcomulacion = 0;
         let fibonacciResult = 1;
         for (let f = 2; f <= number;f++){
-            [fibonacciAcomulacion,fibonacciResult] =[fibonacciResult, fibonacciAcomulacion+ fibonacciResult]
+            [fibonacciAcomulacion,fibonacciResult] =[fibonacciResult, fibonacciAcomulacion+ fibonacciResult]  
+            
         }
 
-        //triangular num=3
-        let triangular =(number*(number+1))/2;
-        let triangularResult = 5*triangular;
-        return numPrimeResult - fibonacciResult + triangularResult;
+        //triangular 
+         let triangular =(number*(number+1))/2;
+         let triangularResult = 5*triangular;
+         console.log('triangular',triangular);
+         return numPrimeResult - fibonacciResult + triangularResult;
     }
 
 }
